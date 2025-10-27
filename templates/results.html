@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Comparison Results</title>
+    <link rel="stylesheet" href="/static/style.css">
+  </head>
+  <body>
+    <main class="container results-container">
+      <h1 class="title">Comparison Results</h1>
+
+      <div class="images-row" id="imagesRow">
+        <div class="result-img-box" id="boxA">
+          <img id="resA" src="" alt="Image A">
+        </div>
+        <div class="result-img-box" id="boxB">
+          <img id="resB" src="" alt="Image B">
+        </div>
+      </div>
+
+      <div class="result-card" id="resultCard">
+        <h2 id="labelText">Similarity</h2>
+        <div class="score" id="scoreText">0.00</div>
+
+        <div class="features" id="features"></div>
+      </div>
+    </main>
+
+    <canvas id="confetti-canvas" class="confetti-canvas"></canvas>
+
+    <script src="/static/results.js"></script>
+  </body>
+</html>

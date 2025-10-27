@@ -1,0 +1,6 @@
+Flask>=2.0
+Pillow
+numpy
+opencv-python
+imagehash
+scikit-image

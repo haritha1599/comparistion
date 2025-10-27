@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Upload & Compare</title>
+    <link rel="stylesheet" href="/static/style.css">
+  </head>
+  <body>
+    <main class="container">
+      <h1 class="title">Upload & Compare</h1>
+
+      <div class="uploader-grid">
+        <div class="dropbox" id="dropA">
+          <input type="file" accept="image/*" id="fileA" hidden>
+          <div class="drop-content">
+            <p>Drop Image A here or click to browse</p>
+            <div class="thumb" id="thumbA"></div>
+          </div>
+        </div>
+
+        <div class="dropbox" id="dropB">
+          <input type="file" accept="image/*" id="fileB" hidden>
+          <div class="drop-content">
+            <p>Drop Image B here or click to browse</p>
+            <div class="thumb" id="thumbB"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="actions">
+        <button id="compareBtn" class="btn-animated" disabled>
+          <span class="btn-text">Upload & Compare</span>
+          <span class="pulse"></span>
+        </button>
+      </div>
+
+      <div id="spinner" class="spinner hidden" aria-hidden="true"></div>
+    </main>
+
+    <script src="/static/index.js"></script>
+  </body>
+</html>
